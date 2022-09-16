@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="titulo-principal">
+        <img class="imagen-alura" src="imagenes/logoalura.png" alt="Logo letra A alura">
+        
+        <div>
+            <h1>ENCRIPTADOR</h1>
+        </div>
+        
+    </header>
+    <main>
+        <section class="seccion-izquierda">
+          
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="advertencia">
+                <h2 class="información"><img class="signo" src="imagenes/Vector.png" alt="signo de interrogación">Letras minúsculas y sin acentos.</h2>
+            </div> 
+            
+            <div class="botones">
+                <button class="encriptar" onclick="botónEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="botónDesencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+                
+        <section class="seccion-derecha">
+
+           <textarea class="mensaje" cols="18" rows="8" readonly > </textarea>
+
+           <div class="mensaje-titulo-parraffo">            
+            <h3 class="titulo">No se encontro ningún mensaje</h3>
+            <p class="parrafo">Ingresa el texto que desees incriptar o desencriptar</p>
+           </div>
+
+           <div class="boton-copiar">
+             <button class="copiar" onclick="copiar()">Copiar</button>
+           </div>          
+
+        </section>
+    </main>
+
+    <footer class="pie-texto">
+        <p class="parrafo-pie">&copy Copyright Solano julio -Alura - 2022</p>    
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

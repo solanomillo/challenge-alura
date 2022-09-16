@@ -1,0 +1,225 @@
+*{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    
+    background: url(imagenes/Keyboard_Synthwave_562760_1280x720.jpg);
+}
+
+.titulo-principal{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+.imagen-alura{
+    float: left;
+    margin: 20px;
+    background: springgreen;
+    box-shadow: 0px 1px 5px 6px #ffeb3b;
+    border-radius: 100px;
+
+}
+h1{
+    margin-left: 336px;
+    margin-top: 24px;
+    color: #ffeb3b;
+    font-size: 40px;
+    font-weight: bold;    
+}
+
+main{
+    display: flex;
+    margin-left: 80px;  
+}
+/*sección-izquierda*/
+.input-texto{
+    margin-top: 90px;
+    border-radius:  20px;
+    background: none;
+    box-shadow: 0px 24px 32px -8px rgba(116, 169, 141, 0.08);
+    color: greenyellow;
+    border-color: #ffeb3b;
+    resize: none;
+ }
+ .información{
+    font-size: 15px;
+    color: yellowgreen;
+    position: absolute;
+}
+.signo{
+    float: left;
+    margin-top: 16px;
+    margin-right: 6px;
+    background: radial-gradient(#ffeb3b, #8bc34a);
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.encriptar{
+   background-color:chartreuse;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+
+}
+
+.encriptar:hover{
+    background-color: yellow;
+    transform: scale(1.1)
+    
+}
+.desencriptar{
+    margin-left: 30px;
+    border: none;
+    border-radius: 5px;
+    background: chartreuse;
+    cursor: pointer;
+}
+.desencriptar:hover{
+    background-color: yellow;
+    transform: scale(1.1)
+    
+}
+/*sección-derecha*/
+.mensaje{
+    resize: none;
+    background: none;
+    position: relative;
+    margin-top: -25px;
+    margin-left: 90px;
+    background-image: url("imagenes/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    height: 584px;
+    border-radius: 20px;
+    border-color:#ffeb3b
+}
+.mensaje{
+    color: greenyellow;
+}
+.mensaje-titulo-parraffo{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    line-height: 2;
+    transform: translate(0px, -141px);
+}
+
+.titulo{
+    font-weight: bold;
+    width: 400px;
+    padding-left: 60px;
+    color: white;
+}
+.parrafo{
+    display: flex;
+    position: absolute;
+    transform: translate(0px, 40px);
+    color: white;
+    font-size: 17px;
+    margin-left: 56px;
+}
+.boton-copiar{
+    display: flex;
+    position: absolute;
+    transform: translate(0px, -90px);    
+}
+.copiar{
+    margin-left: 205px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copiar:hover{
+    background-color: yellow;
+    transform: scale(1.1)
+    
+}
+.pie-texto{
+    text-align: center;
+    padding: 10px;
+    color: yellow;
+}
+/*responsive*/
+@media screen and (max-width:480px) {
+    *{
+        width: auto;
+    }
+
+    body{
+        float:flex;
+        width:100%;
+        margin-left:50px;
+    }
+
+    .titulo-principal{
+        width: auto;
+        position: absolute;
+        margin-left: inherit;
+        padding: 0px 20px 20px;
+    }
+
+    h1{
+        display:block;       
+        margin:20px 60px 0px 5px;
+        align-items:center;
+        margin-left: 120px;
+        width:auto;     
+        
+    }
+    
+    main{
+       display:block;
+       text-align: center;
+        width:auto;
+        
+    }
+        
+    .input-texto{
+        padding: 22px;
+        width: auto;
+        margin-right: 100px;
+    }
+    .advertencia{
+        position:absolute;
+        width: 252px;
+    }
+    
+    .seccion-derecha{
+        margin-left: 50%;
+    }
+    .mensaje{
+        display: inline;
+        margin-top: 50px;
+        margin-left: 19%;
+        width: 400px;
+    }
+    .titulo{
+        display: inline-flex;   
+        margin-left: 20px;
+        flex-direction: row;
+    }
+    .parrafo{
+        margin-right: 69px;
+
+    }
+    
+    footer{
+        width: 100%;
+        position: fixed;
+    }    
+    
+ } 
+  
